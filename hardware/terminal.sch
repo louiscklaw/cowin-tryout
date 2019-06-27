@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
-LIBS:CH340T-tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
@@ -127,4 +126,38 @@ Wire Wire Line
 Connection ~ 3550 2400
 Wire Wire Line
 	3550 2400 4400 2400
+$Comp
+L taobao-board:TTL_TERMINAL U?
+U 1 1 5D14C894
+P 2350 3200
+F 0 "U?" H 2400 3600 50  0000 C CNN
+F 1 "TTL_TERMINAL" H 2400 3500 50  0000 C CNN
+F 2 "" H 2350 3150 50  0001 C CNN
+F 3 "" H 2350 3150 50  0001 C CNN
+	1    2350 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D14D13E
+P 2850 2950
+F 0 "#PWR?" H 2850 2700 50  0001 C CNN
+F 1 "GND" H 2850 2750 50  0000 C CNN
+F 2 "" H 2850 2950 50  0001 C CNN
+F 3 "" H 2850 2950 50  0001 C CNN
+	1    2850 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2950 2850 3100
+Wire Wire Line
+	2850 3100 2550 3100
+Wire Wire Line
+	2550 3200 3050 3200
+Wire Wire Line
+	2550 3300 3050 3300
+Text HLabel 3050 3200 2    50   Input ~ 0
+TXD
+Text HLabel 3050 3300 2    50   Input ~ 0
+RXD
 $EndSCHEMATC

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
-LIBS:CH340T-tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
