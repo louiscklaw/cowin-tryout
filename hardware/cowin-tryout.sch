@@ -1,11 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:PMS5003S_MOUNT-cache
-LIBS:bmp180_tryout-cache
+LIBS:cowin-tryout-cache
+LIBS:CH340T-tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -24,22 +24,21 @@ F2 "SCL" I L 8350 2450 50
 F3 "SDA" I L 8350 2550 50 
 $EndSheet
 $Sheet
-S 8350 3250 850  650 
+S 2250 1300 850  650 
 U 5D144385
 F0 "sunlight_uv" 50
 F1 "sunlight_uv.sch" 50
-F2 "ADC" I L 8350 3500 50 
-F3 "EN" I L 8350 3600 50 
+F2 "ADC" I R 3100 1700 50 
+F3 "EN" I R 3100 1600 50 
 $EndSheet
 $Sheet
-S 8350 4350 850  650 
+S 6100 2200 850  650 
 U 5D1443CD
 F0 "pm2_5" 50
 F1 "pm2_5.sch" 50
-F2 "SEN_SET" I L 8350 4550 50 
-F3 "SEN_RXD" I L 8350 4650 50 
-F4 "SEN_TXD" I L 8350 4750 50 
-F5 "SEN_RESET" I L 8350 4850 50 
+F2 "SEN_SET" I L 6100 2400 50 
+F3 "SEN_RXD" I L 6100 2500 50 
+F4 "SEN_TXD" I L 6100 2600 50 
 $EndSheet
 $Sheet
 S 8350 1300 850  650 
@@ -50,10 +49,12 @@ F2 "SCL" I L 8350 1550 50
 F3 "SDA" I L 8350 1650 50 
 $EndSheet
 $Sheet
-S 8350 5350 850  500 
+S 8350 4000 850  500 
 U 5D17F36B
 F0 "terminal" 50
 F1 "terminal.sch" 50
+F2 "SCL" I L 8350 4150 50 
+F3 "SDA" I L 8350 4250 50 
 $EndSheet
 $Sheet
 S 6100 1300 850  650 
@@ -63,9 +64,227 @@ F1 "WS2812.sch" 50
 F2 "WS2812_IN" I L 6100 1600 50 
 $EndSheet
 $Sheet
-S 7150 1300 750  650 
+S 8350 3150 750  650 
 U 5D192838
 F0 "ssd1306" 50
 F1 "ssd1306.sch" 50
+F2 "SCL" I L 8350 3400 50 
+F3 "SDA" I L 8350 3500 50 
 $EndSheet
+$Sheet
+S 3300 1300 1000 1450
+U 5D19ABF9
+F0 "esp-12e" 50
+F1 "esp-12e.sch" 50
+F2 "WS2812_OUT" O R 4300 1600 50 
+F3 "SCL" I R 4300 1850 50 
+F4 "SDA" I R 4300 1950 50 
+F5 "ADC" O L 3300 1700 50 
+F6 "RXD" I R 4300 2400 50 
+F7 "TXD" I R 4300 2500 50 
+F8 "GPIO14" I L 3300 1600 50 
+F9 "GPIO12" I R 4300 2600 50 
+F10 "GPIO13" I L 3300 2350 50 
+$EndSheet
+Wire Wire Line
+	3100 1700 3300 1700
+Wire Wire Line
+	3100 1600 3300 1600
+Wire Bus Line
+	5450 900  7650 900 
+Entry Wire Line
+	5350 2400 5450 2300
+Entry Wire Line
+	5450 2400 5350 2500
+Wire Wire Line
+	4300 2400 5350 2400
+Wire Wire Line
+	4300 2500 5350 2500
+Entry Wire Line
+	5450 2500 5350 2600
+Wire Wire Line
+	4300 2600 5350 2600
+Entry Wire Line
+	5450 1500 5350 1600
+Wire Wire Line
+	4300 1600 5350 1600
+Entry Wire Line
+	5450 1750 5350 1850
+Wire Wire Line
+	4300 1850 5350 1850
+Entry Wire Line
+	5450 1850 5350 1950
+Wire Wire Line
+	4300 1950 5350 1950
+Entry Wire Line
+	5550 2400 5450 2300
+Entry Wire Line
+	5450 2400 5550 2500
+Wire Wire Line
+	6100 2400 5550 2400
+Wire Wire Line
+	6100 2500 5550 2500
+Entry Wire Line
+	5450 2500 5550 2600
+Wire Wire Line
+	6100 2600 5550 2600
+Entry Wire Line
+	5450 1500 5550 1600
+Wire Wire Line
+	6100 1600 5550 1600
+Text Label 5300 1600 2    50   ~ 0
+WS2812
+Text Label 5650 1600 0    50   ~ 0
+WS2812
+Text Label 5300 1850 2    50   ~ 0
+SCL
+Text Label 5300 1950 2    50   ~ 0
+SDA
+Text Label 5300 2400 2    50   ~ 0
+RXD
+Text Label 5300 2500 2    50   ~ 0
+TXD
+Text Label 5300 2600 2    50   ~ 0
+GPIO12
+Text Label 5600 2500 0    50   ~ 0
+RXD
+Text Label 5600 2600 0    50   ~ 0
+TXD
+Text Label 5600 2400 0    50   ~ 0
+GPIO12
+Entry Wire Line
+	7650 1550 7750 1650
+Entry Wire Line
+	7650 1450 7750 1550
+Wire Wire Line
+	7750 1550 8350 1550
+Wire Wire Line
+	7750 1650 8350 1650
+Entry Wire Line
+	7650 2350 7750 2450
+Entry Wire Line
+	7650 2450 7750 2550
+Entry Wire Line
+	7650 3300 7750 3400
+Entry Wire Line
+	7650 3400 7750 3500
+Entry Wire Line
+	7650 4050 7750 4150
+Entry Wire Line
+	7650 4150 7750 4250
+Wire Wire Line
+	7750 2450 8350 2450
+Wire Wire Line
+	7750 2550 8350 2550
+Wire Wire Line
+	7750 3400 8350 3400
+Wire Wire Line
+	7750 3500 8350 3500
+Wire Wire Line
+	7750 4150 8350 4150
+Wire Wire Line
+	7750 4250 8350 4250
+Text Label 7950 4150 0    50   ~ 0
+SCL
+Text Label 7950 4250 0    50   ~ 0
+SDA
+Text Label 7950 3400 0    50   ~ 0
+SCL
+Text Label 7950 3500 0    50   ~ 0
+SDA
+Text Label 7950 2450 0    50   ~ 0
+SCL
+Text Label 7950 2550 0    50   ~ 0
+SDA
+Text Label 7950 1550 0    50   ~ 0
+SCL
+Text Label 7950 1650 0    50   ~ 0
+SDA
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H1
+U 1 1 5D18A779
+P 5900 6650
+F 0 "H1" H 6000 6696 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 6000 6605 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 5900 6650 50  0001 C CNN
+F 3 "~" H 5900 6650 50  0001 C CNN
+	1    5900 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H2
+U 1 1 5D18AA78
+P 5900 6850
+F 0 "H2" H 6000 6896 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 6000 6805 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 5900 6850 50  0001 C CNN
+F 3 "~" H 5900 6850 50  0001 C CNN
+	1    5900 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H3
+U 1 1 5D18AC0B
+P 5900 7050
+F 0 "H3" H 6000 7096 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 6000 7005 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 5900 7050 50  0001 C CNN
+F 3 "~" H 5900 7050 50  0001 C CNN
+	1    5900 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H4
+U 1 1 5D18AD39
+P 5900 7250
+F 0 "H4" H 6000 7296 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 6000 7205 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 5900 7250 50  0001 C CNN
+F 3 "~" H 5900 7250 50  0001 C CNN
+	1    5900 7250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1000 6600 1050 800 
+U 5D194EE8
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
+$Comp
+L taobao-board:DESIGNED_IN_HONG_KONG U?
+U 1 1 5D1FB661
+P 4050 6800
+F 0 "U?" H 4178 6846 50  0000 L CNN
+F 1 "DESIGNED_IN_HONG_KONG" H 4178 6755 50  0000 L CNN
+F 2 "" H 4050 6650 50  0001 C CNN
+F 3 "" H 4050 6650 50  0001 C CNN
+	1    4050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-board:GITHUB_ADDRESS U?
+U 1 1 5D1FB900
+P 4050 7100
+F 0 "U?" H 4178 7146 50  0000 L CNN
+F 1 "GITHUB_ADDRESS" H 4178 7055 50  0000 L CNN
+F 2 "" H 4050 6900 50  0001 C CNN
+F 3 "" H 4050 6900 50  0001 C CNN
+	1    4050 7100
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5450 900  5450 2850
+Wire Bus Line
+	7650 900  7650 4450
+$Comp
+L taobao-board:BOARD_REVISION U?
+U 1 1 5D1FD10E
+P 4050 7400
+F 0 "U?" H 4178 7446 50  0000 L CNN
+F 1 "BOARD_REVISION" H 4178 7355 50  0000 L CNN
+F 2 "" H 4050 7150 50  0001 C CNN
+F 3 "" H 4050 7150 50  0001 C CNN
+	1    4050 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
