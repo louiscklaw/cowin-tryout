@@ -5,7 +5,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -54,5 +54,18 @@ S 8350 5350 850  500
 U 5D17F36B
 F0 "terminal" 50
 F1 "terminal.sch" 50
+$EndSheet
+$Sheet
+S 6100 1300 850  650 
+U 5D190D76
+F0 "WS2812" 50
+F1 "WS2812.sch" 50
+F2 "WS2812_IN" I L 6100 1600 50 
+$EndSheet
+$Sheet
+S 7150 1300 750  650 
+U 5D192838
+F0 "ssd1306" 50
+F1 "ssd1306.sch" 50
 $EndSheet
 $EndSCHEMATC
