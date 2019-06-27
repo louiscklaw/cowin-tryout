@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:PMS5003S_MOUNT-cache
+LIBS:bmp180_tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
