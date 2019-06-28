@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
-LIBS:CH340T-tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -49,12 +48,14 @@ F2 "SCL" I L 8350 1550 50
 F3 "SDA" I L 8350 1650 50 
 $EndSheet
 $Sheet
-S 8350 4000 850  500 
+S 8350 4000 750  650 
 U 5D17F36B
 F0 "terminal" 50
 F1 "terminal.sch" 50
 F2 "SCL" I L 8350 4150 50 
 F3 "SDA" I L 8350 4250 50 
+F4 "TXD" I L 8350 4400 50 
+F5 "RXD" I L 8350 4500 50 
 $EndSheet
 $Sheet
 S 6100 1300 850  650 
@@ -272,10 +273,6 @@ F 3 "" H 4050 6900 50  0001 C CNN
 	1    4050 7100
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5450 900  5450 2850
-Wire Bus Line
-	7650 900  7650 4450
 $Comp
 L taobao-board:BOARD_REVISION U?
 U 1 1 5D1FD10E
@@ -287,4 +284,20 @@ F 3 "" H 4050 7150 50  0001 C CNN
 	1    4050 7400
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	7650 4300 7750 4400
+Entry Wire Line
+	7650 4400 7750 4500
+Wire Wire Line
+	7750 4400 8350 4400
+Wire Wire Line
+	7750 4500 8350 4500
+Text Label 7950 4400 0    50   ~ 0
+TXD
+Text Label 7950 4500 0    50   ~ 0
+RXD
+Wire Bus Line
+	5450 900  5450 2850
+Wire Bus Line
+	7650 900  7650 4700
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-19634846064187284
+19636407957514284
 2EDGK
 2EDGR-2
 2EDGR-2
@@ -44793,6 +44793,13 @@ MCP73837_MSOP10
 28
 11
 footprint-lib
+ML8511
+
+
+0
+12
+12
+footprint-lib
 MLT-8530
 
 
@@ -45626,12 +45633,12 @@ Headphones with microphone connector, 3.5mm, 4 pins.
 5
 5
 footprint-lib
+PMS5003S_BODY
 PMS5003S
-PMS5003S
-PMS5003S
+PMS5003S PMS5003S BODY
 0
-8
-8
+0
+0
 footprint-lib
 Pololu_Breakout-16_15.2x20.3mm
 Pololu Breakout 16-pin 15.2x20.3mm 0.6x0.8\

@@ -42,10 +42,10 @@
             52500 -50000))
     (plane GND (polygon B.Cu 0  52500 -50000  52500 -107500  122500 -107500  122500 -50000
             52500 -50000))
-    (keepout "" (polygon F.Cu 0  91500 -97500  112000 -97500  112000 -105000  91500 -105000
-            91500 -97500))
-    (keepout "" (polygon B.Cu 0  91500 -97500  112000 -97500  112000 -105000  91500 -105000
-            91500 -97500))
+    (keepout "" (polygon F.Cu 0  90500 -97000  118000 -97000  118000 -105000  90500 -105000
+            90500 -97000))
+    (keepout "" (polygon B.Cu 0  90500 -97000  118000 -97000  118000 -105000  90500 -105000
+            90500 -97000))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -55,6 +55,9 @@
     )
   )
   (placement
+    (component LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (place D8 89400 -55600 front 270 (PN 3V3_HEALTHY))
+    )
     (component "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like"
       (place H4 115000 -56000 front 0 (PN MOUNT_M2.5))
       (place H3 58000 -56000 front 0 (PN MOUNT_M2.5))
@@ -62,17 +65,16 @@
       (place H1 58000 -102000 front 0 (PN MOUNT_M2.5))
     )
     (component "footprint-lib:ESP-12E"
-      (place U6 103000 -92750 front 180 (PN ESP12))
+      (place U6 101000 -92750 front 180 (PN ESP12))
     )
     (component Resistor_SMD:R_Array_Concave_4x0603
-      (place RN5 114500 -64000 front 0 (PN RN_472,0603))
-      (place RN4 110000 -64000 front 0 (PN RN_472,0603))
+      (place RN5 108000 -55250 front 0 (PN RN_472,0603))
+      (place RN4 108000 -59750 front 0 (PN RN_472,0603))
     )
     (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (place C19 81750 -66000 front 180 (PN C106,0603))
-      (place R19 81750 -63250 front 0 (PN R102,0603))
-      (place C18 87000 -72750 front 180 (PN C104,0603))
-      (place C17 87000 -70000 front 180 (PN C104,0603))
+      (place C19 56750 -67000 front 270 (PN C106,0603))
+      (place C18 90300 -73500 front 270 (PN C104,0603))
+      (place C17 87550 -73500 front 270 (PN C104,0603))
       (place R16 78000 -87800 front 270 (PN R471,0603))
       (place R15 114200 -91250 front 270 (PN R0,0603))
       (place R14 71000 -87800 front 90 (PN R471,0603))
@@ -87,38 +89,44 @@
       (place C9 80000 -87800 front 270 (PN C104,0603))
       (place C3 57300 -85900 front 180 (PN C102,0603))
       (place C2 57300 -87700 front 180 (PN C104,0603))
-      (place C1 74400 -66600 front 180 (PN C104,0603))
+      (place C1 56750 -72000 front 270 (PN C104,0603))
     )
     (component "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-      (place U11 89750 -63400 front 90 (PN "AMS1117-3.3"))
+      (place U11 80950 -70750 front 180 (PN "AMS1117-3.3"))
+    )
+    (component Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (place R19 89400 -55500 back 90 (PN R102,0603))
+      (place R18 111300 -80950 back 90 (PN R123,0603))
+      (place R17 111300 -84950 back 90 (PN R123,0603))
+      (place C16 99000 -70000 front 180 (PN C22pf,0603))
+      (place C15 99000 -62800 front 0 (PN C22pf,0603))
+      (place C14 109400 -66100 back 180 (PN C103,0603))
+      (place C13 109400 -69900 back 180 (PN C104,0603))
+      (place C12 109400 -71700 back 180 (PN C225,0603))
+      (place C11 114300 -67700 back 0 (PN C475,0603))
     )
     (component "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-      (place JP5 91000 -70500 front 0 (PN 3V_EN))
-      (place JP3 91000 -73500 front 0 (PN 5V_EN))
-      (place JP2 63000 -66750 front 180 (PN J_ADDR))
-    )
-    (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (place D8 81750 -60000 front 0 (PN 3V3_HEALTHY))
-      (place D7 114200 -95200 front 270 (PN LED_BLUE,0603))
+      (place JP5 88050 -69500 front 90 (PN 3V_EN))
+      (place JP3 91050 -69500 front 90 (PN 5V_EN))
     )
     (component "footprint-lib:CONN_I2C_SSD1306"
-      (place U10 97550 -55000 front 90 (PN "SSD1306-OLED-I2C"))
-      (place U9 97550 -59000 front 90 (PN "SSD1306-OLED-I2C"))
+      (place U10 95750 -55250 front 90 (PN "SSD1306-OLED-I2C"))
+      (place U9 95750 -59500 front 90 (PN "SSD1306-OLED-I2C"))
     )
     (component "footprint-lib:OSC_3225"
-      (place Y1 99000 -71000 front 270 (PN O_12M,3225))
+      (place Y1 99000 -66400 front 270 (PN O_12M,3225))
     )
     (component "footprint-lib:USB_Micro-B_Molex-105017-0001"
-      (place U8 115300 -72300 front 90 (PN USB_Micro))
+      (place U8 115300 -67700 front 90 (PN USB_Micro))
     )
     (component "footprint-lib:CH340T_SSOP-20"
-      (place U7 106670 -72430 front 270 (PN CH340T))
+      (place U7 106670 -67830 front 270 (PN CH340T))
     )
     (component "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
       (place U5 87950 -101050 front 180 (PN 74AHCT1G125))
     )
     (component "footprint-lib:SHT3x-DIS"
-      (place U4 66500 -70500 front 270 (PN "SHT3x-DIS"))
+      (place U4 57750 -78750 front 90 (PN "SHT3x-DIS"))
     )
     (component "footprint-lib:PMS5003S_BODY"
       (place U3 80400 -84100 back 0 (PN PMS5003S_BODY))
@@ -127,7 +135,7 @@
       (place U2 57810 -90990 front 0 (PN ML8511))
     )
     (component "footprint-lib:BMP180"
-      (place U1 75750 -70750 front 90 (PN BMP180))
+      (place U1 60750 -71500 front 180 (PN BMP180))
     )
     (component TestPoint:TestPoint_Pad_1.0x1.0mm
       (place TP2 88450 -92900 front 90 (PN TP_TXD))
@@ -138,22 +146,12 @@
       (place SW1 67710 -87820 front 270 (PN FLASH_BUTTON))
     )
     (component Resistor_SMD:R_Array_Concave_4x0603::1
-      (place RN2 61750 -70500 front 90 (PN RN_472,0603))
-      (place RN1 80750 -70000 front 180 (PN RN_103,0603))
-    )
-    (component Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (place R18 111300 -80950 back 90 (PN R123,0603))
-      (place R17 111300 -84950 back 90 (PN R123,0603))
-      (place C16 99000 -74600 front 180 (PN C22pf,0603))
-      (place C15 99000 -67400 front 0 (PN C22pf,0603))
-      (place C14 109400 -70700 back 180 (PN C103,0603))
-      (place C13 109400 -74500 back 180 (PN C104,0603))
-      (place C12 109400 -76300 back 180 (PN C225,0603))
-      (place C11 114300 -72300 back 0 (PN C475,0603))
+      (place RN2 62500 -78750 front 270 (PN RN_472,0603))
+      (place RN1 61500 -67250 front 270 (PN RN_103,0603))
     )
     (component Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place R5 84175 -55845 back 90 (PN R102))
-      (place R4 86400 -55775 back 90 (PN R102))
+      (place R5 84175 -55645 back 90 (PN R102))
+      (place R4 86900 -55575 back 90 (PN R102))
       (place R3 75400 -59900 front 90 (PN R103))
       (place R2 67600 -59900 front 90 (PN R103))
       (place C4 62600 -59900 front 270 (PN C106))
@@ -163,28 +161,32 @@
       (place Q1 114100 -80950 back 270 (PN SS9013_J3))
     )
     (component "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm::1"
-      (place JP1 57250 -70750 front 90 (PN SolderJumper_2_Open_round))
+      (place JP2 67000 -80000 front 0 (PN J_ADDR))
+      (place JP1 67000 -77000 front 0 (PN SolderJumper_2_Open_round))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
-      (place J7 90000 -55800 front 90 (PN DEBUG_HEADER))
+      (place J7 113300 -61200 front 90 (PN DEBUG_HEADER))
     )
     (component Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical
-      (place J3 61750 -75000 front 90 (PN SHT3x_HEADER))
+      (place J3 71000 -81000 front 180 (PN SHT3x_HEADER))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical
-      (place J2 63000 -55700 front 90 (PN CONN_PMS))
+      (place J2 81000 -55500 back 270 (PN CONN_PMS))
     )
     (component Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical
-      (place J1 74250 -75000 front 90 (PN BMP180_HEADER))
+      (place J1 67250 -73250 front 180 (PN BMP180_HEADER))
+    )
+    (component LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (place D7 114200 -95200 front 270 (PN LED_BLUE,0603))
     )
     (component "footprint-lib:LED_WS2812B_5050_white"
       (place D5 65350 -101050 front 0 (PN WS2812B))
       (place D4 73550 -101050 front 0 (PN WS2812B))
       (place D3 81750 -101050 front 0 (PN WS2812B))
     )
-    (component LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place D2 84175 -55845 front 270 (PN 3V3_HEALTHY))
-      (place D1 86400 -55800 front 270 (PN 5V_HEALTHY))
+    (component LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder::1
+      (place D2 84175 -55645 front 270 (PN 3V3_HEALTHY))
+      (place D1 86900 -55600 front 270 (PN 5V_HEALTHY))
     )
     (component Capacitor_SMD:CP_Elec_6.3x5.3
       (place C10 111500 -93000 back 270 (PN CP100uf,10V))
@@ -193,10 +195,26 @@
       (place C8 65350 -97050 front 180 (PN C106,0805))
       (place C7 73550 -97050 front 180 (PN C106,0805))
       (place C6 81750 -97050 front 180 (PN C106,0805))
-      (place C5 70500 -71250 front 90 (PN C104,0805))
+      (place C5 57500 -82000 front 0 (PN C104,0805))
     )
   )
   (library
+    (image LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (outline (path signal 100  1000 600  -700 600))
+      (outline (path signal 100  -700 600  -1000 300))
+      (outline (path signal 100  -1000 300  -1000 -600))
+      (outline (path signal 100  -1000 -600  1000 -600))
+      (outline (path signal 100  1000 -600  1000 600))
+      (outline (path signal 120  1000 960  -1860 960))
+      (outline (path signal 120  -1860 960  -1860 -960))
+      (outline (path signal 120  -1860 -960  1000 -960))
+      (outline (path signal 50  -1850 -950  -1850 950))
+      (outline (path signal 50  -1850 950  1850 950))
+      (outline (path signal 50  1850 950  1850 -950))
+      (outline (path signal 50  1850 -950  -1850 -950))
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
+    )
     (image "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like"
       (outline (path signal 1200  1905 0  1827.83 -536.701  1602.59 -1029.92  1247.51 -1439.7
             791.366 -1732.85  271.11 -1885.61  -271.11 -1885.61  -791.366 -1732.85
@@ -334,6 +352,20 @@
       (pin Rect[T]Pad_2000x1500_um 3 -3150 -2300)
       (pin Rect[T]Pad_2000x1500_um 1 -3150 2300)
     )
+    (image Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (outline (path signal 50  1650 -730  -1650 -730))
+      (outline (path signal 50  1650 730  1650 -730))
+      (outline (path signal 50  -1650 730  1650 730))
+      (outline (path signal 50  -1650 -730  -1650 730))
+      (outline (path signal 120  -171.267 -510  171.267 -510))
+      (outline (path signal 120  -171.267 510  171.267 510))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
+      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
+    )
     (image "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
       (outline (path signal 120  -1400 -300  -1400 300))
       (outline (path signal 120  700 -1000  -700 -1000))
@@ -343,24 +375,8 @@
       (outline (path signal 50  -1650 1250  -1650 -1250))
       (outline (path signal 50  1650 -1250  1650 1250))
       (outline (path signal 50  1650 -1250  -1650 -1250))
-      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 1 -650 0)
-      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 2 650 0)
-    )
-    (image LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (outline (path signal 100  800 400  -500 400))
-      (outline (path signal 100  -500 400  -800 100))
-      (outline (path signal 100  -800 100  -800 -400))
-      (outline (path signal 100  -800 -400  800 -400))
-      (outline (path signal 100  800 -400  800 400))
-      (outline (path signal 120  800 735  -1660 735))
-      (outline (path signal 120  -1660 735  -1660 -735))
-      (outline (path signal 120  -1660 -735  800 -735))
-      (outline (path signal 50  -1650 -730  -1650 730))
-      (outline (path signal 50  -1650 730  1650 730))
-      (outline (path signal 50  1650 730  1650 -730))
-      (outline (path signal 50  1650 -730  -1650 -730))
-      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
-      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
+      (pin Cust[T]Pad_1000x500_1500x_1000_23_um 1 -650 0)
+      (pin Cust[T]Pad_1000x500_1500x_1000_23_um 2 650 0)
     )
     (image "footprint-lib:CONN_I2C_SSD1306"
       (outline (path signal 100  -1270 1270  635 1270))
@@ -645,20 +661,6 @@
       (pin Rect[T]Pad_900x400_um 6 850 -400)
       (pin Rect[T]Pad_900x400_um 5 850 -1200)
     )
-    (image Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
-      (outline (path signal 50  1650 -730  -1650 -730))
-      (outline (path signal 50  1650 730  1650 -730))
-      (outline (path signal 50  -1650 730  1650 730))
-      (outline (path signal 50  -1650 -730  -1650 730))
-      (outline (path signal 120  -171.267 -510  171.267 -510))
-      (outline (path signal 120  -171.267 510  171.267 510))
-      (outline (path signal 100  800 -400  -800 -400))
-      (outline (path signal 100  800 400  800 -400))
-      (outline (path signal 100  -800 400  800 400))
-      (outline (path signal 100  -800 -400  -800 400))
-      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
-      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
-    )
     (image Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
       (outline (path signal 50  1850 -950  -1850 -950))
       (outline (path signal 50  1850 950  1850 -950))
@@ -694,8 +696,8 @@
       (outline (path signal 50  -1650 1250  -1650 -1250))
       (outline (path signal 50  1650 -1250  1650 1250))
       (outline (path signal 50  1650 -1250  -1650 -1250))
-      (pin Cust[T]Pad_1000x500_1500x_1000_23_um 1 -650 0)
-      (pin Cust[T]Pad_1000x500_1500x_1000_23_um 2 650 0)
+      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 1 -650 0)
+      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 2 650 0)
     )
     (image Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
       (outline (path signal 50  1800 1800  -1800 1800))
@@ -789,6 +791,22 @@
       (pin Oval[A]Pad_1000x1000_um 3 0 -2540)
       (pin Oval[A]Pad_1000x1000_um 4 0 -3810)
     )
+    (image LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (outline (path signal 100  800 400  -500 400))
+      (outline (path signal 100  -500 400  -800 100))
+      (outline (path signal 100  -800 100  -800 -400))
+      (outline (path signal 100  -800 -400  800 -400))
+      (outline (path signal 100  800 -400  800 400))
+      (outline (path signal 120  800 735  -1660 735))
+      (outline (path signal 120  -1660 735  -1660 -735))
+      (outline (path signal 120  -1660 -735  800 -735))
+      (outline (path signal 50  -1650 -730  -1650 730))
+      (outline (path signal 50  -1650 730  1650 730))
+      (outline (path signal 50  1650 730  1650 -730))
+      (outline (path signal 50  1650 -730  -1650 -730))
+      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
+      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
+    )
     (image "footprint-lib:LED_WS2812B_5050_white"
       (outline (path signal 50  3450 2750  -3450 2750))
       (outline (path signal 50  3450 -2750  3450 2750))
@@ -813,7 +831,7 @@
       (pin Rect[T]Pad_1500x1000_um 2 -2450 -1600)
       (pin Rect[T]Pad_1500x1000_um 1 -2450 1600)
     )
-    (image LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+    (image LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder::1
       (outline (path signal 50  1850 -950  -1850 -950))
       (outline (path signal 50  1850 950  1850 -950))
       (outline (path signal 50  -1850 950  1850 950))
@@ -1076,12 +1094,12 @@
   )
   (network
     (net +3V3
-      (pins U6-8 RN5-5 RN5-6 RN5-7 RN5-8 RN4-5 RN4-6 RN4-7 RN4-8 JP5-1 D8-2 U10-VCC
+      (pins U6-8 RN5-5 RN5-6 RN5-7 RN5-8 RN4-5 RN4-6 RN4-7 RN4-8 R19-1 JP5-1 U10-VCC
         U9-VCC U4-5 U2-7 U1-2 U1-3 RN2-6 RN2-5 RN1-8 RN1-7 R13-1 R9-2 R8-2 R7-2 R6-2
         R5-1 R3-1 R2-1 R1-1 JP1-1 J3-2 J1-1 C10-1 C5-2 C2-1 C1-2)
     )
     (net GND
-      (pins U6-15 C19-2 U11-1 R19-2 C18-2 C17-2 U10-GND U9-GND Y1-2 Y1-2@1 U8-6 U8-7
+      (pins D8-1 U6-15 C19-2 U11-1 C18-2 C17-2 U10-GND U9-GND Y1-2 Y1-2@1 U8-6 U8-7
         U8-7@1 U8-6@1 U8-6@2 U8-9 U8-5 U8-8 U8-7@2 U7-8 U5-1 U5-3 U4-8 U4-7 U4-PAD
         U2-5 U1-7 SW2-2 SW1-2 R10-1 JP2-2 J7-1 J3-1 J2-2 J1-2 D5-3 D4-3 D3-3 D2-1
         D1-1 C16-2 C15-2 C14-2 C13-2 C12-2 C11-1 C10-2 C9-2 C8-1 C7-1 C6-1 C5-1 C4-2
@@ -1121,9 +1139,6 @@
     (net "Net-(D4-Pad2)"
       (pins D5-4 D4-2)
     )
-    (net "Net-(D5-Pad2)"
-      (pins D5-2)
-    )
     (net "Net-(D7-Pad2)"
       (pins R13-2 D7-2)
     )
@@ -1135,12 +1150,6 @@
     )
     (net /SCL
       (pins U6-20 RN5-1 RN4-1 U10-SCL U9-SCL U4-4 U1-5 RN2-1 RN1-1 J3-4 J1-3)
-    )
-    (net "Net-(J2-Pad8)"
-      (pins J2-8)
-    )
-    (net "Net-(J2-Pad7)"
-      (pins J2-7)
     )
     (net /pm2_5/SEN_RESET
       (pins R3-2 J2-6)
@@ -1202,86 +1211,8 @@
     (net "Net-(R15-Pad2)"
       (pins SW2-1 R16-2 R15-2)
     )
-    (net "Net-(RN1-Pad5)"
-      (pins RN1-5)
-    )
-    (net "Net-(RN1-Pad6)"
-      (pins RN1-6)
-    )
-    (net "Net-(RN1-Pad4)"
-      (pins RN1-4)
-    )
-    (net "Net-(RN1-Pad3)"
-      (pins RN1-3)
-    )
-    (net "Net-(U1-Pad4)"
-      (pins U1-4)
-    )
-    (net "Net-(U1-Pad1)"
-      (pins U1-1)
-    )
-    (net "Net-(U2-Pad12)"
-      (pins U2-12)
-    )
-    (net "Net-(U2-Pad11)"
-      (pins U2-11)
-    )
-    (net "Net-(U2-Pad9)"
-      (pins U2-9)
-    )
     (net "/esp-12e/ADC"
       (pins U6-2 U2-8)
-    )
-    (net "Net-(U2-Pad6)"
-      (pins U2-6)
-    )
-    (net "Net-(U2-Pad3)"
-      (pins U2-3)
-    )
-    (net "Net-(U2-Pad2)"
-      (pins U2-2)
-    )
-    (net "Net-(U2-Pad1)"
-      (pins U2-1)
-    )
-    (net "/esp-12e/GPIO13"
-      (pins U6-7)
-    )
-    (net "/esp-12e/SPI_MOSI"
-      (pins U6-9)
-    )
-    (net "/esp-12e/SPI_MISO"
-      (pins U6-10)
-    )
-    (net "/esp-12e/GPIO9"
-      (pins U6-11)
-    )
-    (net "/esp-12e/GPIO10"
-      (pins U6-12)
-    )
-    (net "/esp-12e/SPI_INT"
-      (pins U6-13)
-    )
-    (net "/esp-12e/SPI_CLK"
-      (pins U6-14)
-    )
-    (net "Net-(U7-Pad20)"
-      (pins U7-20)
-    )
-    (net "Net-(U7-Pad17)"
-      (pins U7-17)
-    )
-    (net "/esp-12e/usb_to_uart/DCD"
-      (pins U7-14)
-    )
-    (net "/esp-12e/usb_to_uart/RI"
-      (pins U7-13)
-    )
-    (net "/esp-12e/usb_to_uart/DSR"
-      (pins U7-12)
-    )
-    (net "/esp-12e/usb_to_uart/CTS"
-      (pins U7-11)
     )
     (net "Net-(U7-Pad7)"
       (pins U8-2 U7-7)
@@ -1289,48 +1220,32 @@
     (net "Net-(U7-Pad6)"
       (pins U8-3 U7-6)
     )
-    (net "Net-(U8-Pad4)"
-      (pins U8-4)
-    )
     (net "Net-(C17-Pad1)"
       (pins U11-3 JP3-2 C17-1)
     )
     (net "Net-(C18-Pad1)"
       (pins C19-1 U11-2 U11-2@1 JP5-2 C18-1)
     )
-    (net "Net-(D8-Pad1)"
-      (pins R19-1 D8-1)
-    )
-    (net "Net-(RN4-Pad4)"
-      (pins RN4-4)
-    )
-    (net "Net-(RN4-Pad3)"
-      (pins RN4-3)
-    )
-    (net "Net-(RN5-Pad4)"
-      (pins RN5-4)
-    )
-    (net "Net-(RN5-Pad3)"
-      (pins RN5-3)
+    (net "Net-(D8-Pad2)"
+      (pins D8-2 R19-2)
     )
     (class kicad_default "" +3V3 +5V /GPIO12 /RXD /SCL /SDA /SHT3X/ADDR /SHT3X/ALERT
       /SHT3X/NRST /TXD "/esp-12e/ADC" "/esp-12e/EN" "/esp-12e/GPIO0" "/esp-12e/GPIO10"
       "/esp-12e/GPIO13" "/esp-12e/GPIO15" "/esp-12e/GPIO16" "/esp-12e/GPIO2"
-      "/esp-12e/GPIO9" "/esp-12e/INT" "/esp-12e/SPI_CLK" "/esp-12e/SPI_INT"
-      "/esp-12e/SPI_MISO" "/esp-12e/SPI_MOSI" "/esp-12e/nRST" "/esp-12e/usb_to_uart/CTS"
-      "/esp-12e/usb_to_uart/DCD" "/esp-12e/usb_to_uart/DSR" "/esp-12e/usb_to_uart/DTR"
-      "/esp-12e/usb_to_uart/RI" "/esp-12e/usb_to_uart/RTS" "/esp-12e/usb_to_uart/RXD0"
-      /pm2_5/SEN_RESET /power/OUTPUT /sunlight_uv/EN GND "Net-(C14-Pad1)"
-      "Net-(C15-Pad1)" "Net-(C16-Pad1)" "Net-(C17-Pad1)" "Net-(C18-Pad1)"
-      "Net-(C3-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D3-Pad4)"
-      "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(D8-Pad1)"
-      "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(JP1-Pad2)" "Net-(JP4-Pad2)" "Net-(Q1-Pad1)"
-      "Net-(Q2-Pad1)" "Net-(R14-Pad2)" "Net-(R15-Pad2)" "Net-(RN1-Pad3)" "Net-(RN1-Pad4)"
-      "Net-(RN1-Pad5)" "Net-(RN1-Pad6)" "Net-(RN3-Pad4)" "Net-(RN3-Pad5)"
-      "Net-(RN4-Pad3)" "Net-(RN4-Pad4)" "Net-(RN5-Pad3)" "Net-(RN5-Pad4)"
-      "Net-(U1-Pad1)" "Net-(U1-Pad4)" "Net-(U2-Pad1)" "Net-(U2-Pad11)" "Net-(U2-Pad12)"
-      "Net-(U2-Pad2)" "Net-(U2-Pad3)" "Net-(U2-Pad6)" "Net-(U2-Pad9)" "Net-(U7-Pad17)"
-      "Net-(U7-Pad20)" "Net-(U7-Pad6)" "Net-(U7-Pad7)" "Net-(U8-Pad4)"
+      "/esp-12e/GPIO9" "/esp-12e/SPI_CLK" "/esp-12e/SPI_INT" "/esp-12e/SPI_MISO"
+      "/esp-12e/SPI_MOSI" "/esp-12e/nRST" "/esp-12e/usb_to_uart/CTS" "/esp-12e/usb_to_uart/DCD"
+      "/esp-12e/usb_to_uart/DSR" "/esp-12e/usb_to_uart/DTR" "/esp-12e/usb_to_uart/RI"
+      "/esp-12e/usb_to_uart/RTS" "/esp-12e/usb_to_uart/RXD0" /pm2_5/SEN_RESET
+      /sunlight_uv/EN GND "Net-(C14-Pad1)" "Net-(C15-Pad1)" "Net-(C16-Pad1)"
+      "Net-(C17-Pad1)" "Net-(C18-Pad1)" "Net-(C3-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)"
+      "Net-(D3-Pad2)" "Net-(D3-Pad4)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D7-Pad2)"
+      "Net-(D8-Pad1)" "Net-(D8-Pad2)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(JP1-Pad2)"
+      "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(R14-Pad2)" "Net-(R15-Pad2)" "Net-(RN1-Pad3)"
+      "Net-(RN1-Pad4)" "Net-(RN1-Pad5)" "Net-(RN1-Pad6)" "Net-(RN4-Pad3)"
+      "Net-(RN4-Pad4)" "Net-(RN5-Pad3)" "Net-(RN5-Pad4)" "Net-(U1-Pad1)" "Net-(U1-Pad4)"
+      "Net-(U2-Pad1)" "Net-(U2-Pad11)" "Net-(U2-Pad12)" "Net-(U2-Pad2)" "Net-(U2-Pad3)"
+      "Net-(U2-Pad6)" "Net-(U2-Pad9)" "Net-(U7-Pad17)" "Net-(U7-Pad20)" "Net-(U7-Pad6)"
+      "Net-(U7-Pad7)" "Net-(U8-Pad4)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
