@@ -1,10 +1,12 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
+LIBS:CH340T-tryout-cache
+LIBS:MCP73831-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 6 12
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -132,7 +134,7 @@ U 1 1 5D14C894
 P 2350 3200
 F 0 "U14" H 2400 3600 50  0000 C CNN
 F 1 "TTL_TERMINAL" H 2400 3500 50  0000 C CNN
-F 2 "" H 2350 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 2350 3150 50  0001 C CNN
 F 3 "" H 2350 3150 50  0001 C CNN
 	1    2350 3200
 	-1   0    0    -1  

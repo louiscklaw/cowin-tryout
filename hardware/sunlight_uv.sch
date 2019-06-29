@@ -1,10 +1,12 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
+LIBS:CH340T-tryout-cache
+LIBS:MCP73831-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 3 12
+Sheet 3 13
 Title ""
 Date ""
 Rev ""

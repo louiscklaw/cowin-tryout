@@ -1,10 +1,12 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
+LIBS:CH340T-tryout-cache
+LIBS:MCP73831-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 11 12
+Sheet 11 13
 Title ""
 Date ""
 Rev ""
@@ -184,10 +186,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 2300 2500 2300
 Wire Wire Line
-	2500 2100 2850 2100
-Wire Wire Line
-	2850 2100 2850 1600
-Wire Wire Line
 	2850 1600 3200 1600
 Connection ~ 3200 1600
 Wire Wire Line
@@ -220,7 +218,6 @@ F 3 "" H 2850 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 1450 2850 1600
-Connection ~ 2850 1600
 $Comp
 L power:+5V #PWR0163
 U 1 1 5D0A9573
@@ -2609,4 +2606,19 @@ Text HLabel 6150 2850 0    50   Input ~ 0
 nRST
 Text HLabel 6150 4450 0    50   Input ~ 0
 GPIO0
+$Comp
+L power:VBUS #PWR0153
+U 1 1 5D20BE2E
+P 2650 1800
+F 0 "#PWR0153" H 2650 1650 50  0001 C CNN
+F 1 "VBUS" H 2665 1973 50  0000 C CNN
+F 2 "" H 2650 1800 50  0001 C CNN
+F 3 "" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1800 2650 2100
+Wire Wire Line
+	2650 2100 2500 2100
 $EndSCHEMATC

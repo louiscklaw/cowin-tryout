@@ -5,13 +5,13 @@
   )
   (autoroute_settings
     (fanout off)
-    (autoroute on)
+    (eu.mihosoft.freerouting.autoroute on)
     (postroute on)
     (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2548)
+    (start_pass_no 4091)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -68,7 +68,8 @@
     /SCL "/pm2_5/SEN_RESET" /TXD /RXD /GPIO12 /SHT3X/NRST /SHT3X/ALERT "/esp-12e/GPIO2"
     "Net-(JP1-Pad2)" /SHT3X/ADDR "Net-(Q1-Pad1)" "/esp-12e/usb_to_uart/RTS" "Net-(Q2-Pad1)" "/esp-12e/GPIO0" "/esp-12e/usb_to_uart/DTR" "/sunlight_uv/EN"
     "/esp-12e/EN" "/esp-12e/GPIO15" "/esp-12e/usb_to_uart/RXD0" "Net-(R14-Pad2)" "Net-(R15-Pad2)" "/esp-12e/ADC" "Net-(U7-Pad7)" "Net-(U7-Pad6)"
-    "Net-(C17-Pad1)" "Net-(C18-Pad1)" "Net-(D8-Pad2)"
+    "Net-(C17-Pad1)" "Net-(C18-Pad1)" "Net-(D8-Pad2)" Vbat "Net-(D9-Pad1)" "Net-(D9-Pad2)" VBUS "Net-(JP6-Pad1)"
+    "Net-(R11-Pad1)" "Net-(R20-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
