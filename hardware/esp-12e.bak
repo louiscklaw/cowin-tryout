@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 14
+Sheet 9 15
 Title ""
 Date ""
 Rev ""
@@ -8618,4 +8618,10 @@ F11 "CTS" I L 7650 3000 50
 $EndSheet
 Wire Wire Line
 	3600 4100 3600 5350
+Text Label 1950 1850 2    50   ~ 0
+GPIO15
+Wire Wire Line
+	1950 1850 1350 1850
+Text HLabel 1350 1850 0    50   Input ~ 0
+GPIO15
 $EndSCHEMATC

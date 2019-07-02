@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 14
+Sheet 9 15
 Title ""
 Date ""
 Rev ""
@@ -217,8 +217,6 @@ Text Label 1650 6100 0    50   ~ 0
 GPIO14
 Text Label 1650 6200 0    50   ~ 0
 GPIO12
-Text Label 1650 6300 0    50   ~ 0
-GPIO13
 Text Label 1650 6700 0    50   ~ 0
 SPI_MOSI
 Text Label 1650 6800 0    50   ~ 0
@@ -8582,7 +8580,6 @@ Text Label 3100 1850 2    50   ~ 0
 GPIO2
 Wire Wire Line
 	3100 1850 2700 1850
-NoConn ~ 1650 6300
 $Comp
 L taobao-r:R471,0603 R12
 U 1 1 5D272BB2
@@ -8618,4 +8615,6 @@ F11 "CTS" I L 7650 3000 50
 $EndSheet
 Wire Wire Line
 	3600 4100 3600 5350
+Text Label 1650 6300 0    50   ~ 0
+GPIO13
 $EndSCHEMATC

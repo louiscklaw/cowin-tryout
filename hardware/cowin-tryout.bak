@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -85,7 +85,7 @@ F6 "RXD" I R 4300 2400 50
 F7 "TXD" I R 4300 2500 50 
 F8 "GPIO14" I L 3300 1600 50 
 F9 "GPIO12" I R 4300 2600 50 
-F10 "GPIO13" I L 3300 2350 50 
+F10 "GPIO15" I R 4300 2200 50 
 $EndSheet
 Wire Wire Line
 	3100 1700 3300 1700
@@ -322,8 +322,27 @@ Text Label 7950 5250 0    50   ~ 0
 SCL
 Text Label 7950 5350 0    50   ~ 0
 SDA
+$Sheet
+S 8350 5900 750  550 
+U 5D1B62BF
+F0 "DHT22" 50
+F1 "DHT22.sch" 50
+F2 "DOUT" I L 8350 6150 50 
+$EndSheet
+Entry Wire Line
+	7650 6050 7750 6150
+Wire Wire Line
+	7750 6150 8350 6150
+Text Label 7950 6150 0    50   ~ 0
+DHT_OUT
+Entry Wire Line
+	5450 2100 5350 2200
+Wire Wire Line
+	4300 2200 5350 2200
+Text Label 5300 2200 2    50   ~ 0
+DHT_OUT
 Wire Bus Line
 	5450 900  5450 2850
 Wire Bus Line
-	7650 900  7650 5350
+	7650 900  7650 6200
 $EndSCHEMATC
