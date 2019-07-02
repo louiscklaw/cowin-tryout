@@ -49,9 +49,7 @@ SCL
 Text HLabel 4400 2400 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	2550 2300 3450 2300
-Wire Wire Line
-	2550 2400 3550 2400
+	2550 2400 3450 2400
 $Comp
 L taobao-board:SSD1306-OLED-I2C U9
 U 1 1 5D18E076
@@ -115,17 +113,11 @@ Wire Wire Line
 	3750 1450 3650 1450
 Connection ~ 3650 1450
 Wire Wire Line
-	3450 2100 3450 2300
+	3550 2100 3550 2300
 Wire Wire Line
-	3550 2100 3550 2400
+	3450 2100 3450 2400
 NoConn ~ 3650 2100
 NoConn ~ 3750 2100
-Connection ~ 3450 2300
-Wire Wire Line
-	3450 2300 4400 2300
-Connection ~ 3550 2400
-Wire Wire Line
-	3550 2400 4400 2400
 $Comp
 L taobao-board:TTL_TERMINAL U14
 U 1 1 5D14C894
@@ -160,4 +152,12 @@ Text HLabel 3050 3200 2    50   Input ~ 0
 TXD
 Text HLabel 3050 3300 2    50   Input ~ 0
 RXD
+Wire Wire Line
+	2550 2300 3550 2300
+Connection ~ 3450 2400
+Wire Wire Line
+	3450 2400 4400 2400
+Connection ~ 3550 2300
+Wire Wire Line
+	3550 2300 4400 2300
 $EndSCHEMATC

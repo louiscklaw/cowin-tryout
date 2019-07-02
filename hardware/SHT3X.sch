@@ -1631,14 +1631,14 @@ Text Label 4750 2050 2    50   ~ 0
 SCL
 Text Label 4750 2250 2    50   ~ 0
 SDA
-Text Label 1850 2050 1    50   ~ 0
-SCL
 Text Label 1950 2050 1    50   ~ 0
+SCL
+Text Label 1850 2050 1    50   ~ 0
 SDA
 Wire Wire Line
-	1850 1700 1850 2050
-Wire Wire Line
 	1950 1700 1950 2050
+Wire Wire Line
+	1850 1700 1850 2050
 $Comp
 L Connector:Conn_01x06_Female J3
 U 1 1 5CFBB0DE

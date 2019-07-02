@@ -53,9 +53,7 @@ SCL
 Text HLabel 3450 2150 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	2200 2050 3050 2050
-Wire Wire Line
-	2200 2150 3150 2150
+	2200 2150 3050 2150
 $Comp
 L taobao-board:SSD1306-OLED-I2C U10
 U 1 1 5D18F018
@@ -117,15 +115,17 @@ Wire Wire Line
 	3350 1200 3250 1200
 Connection ~ 3250 1200
 Wire Wire Line
-	3050 1850 3050 2050
-Connection ~ 3050 2050
+	3150 1850 3150 2050
 Wire Wire Line
-	3050 2050 3450 2050
-Wire Wire Line
-	3150 1850 3150 2150
-Connection ~ 3150 2150
-Wire Wire Line
-	3150 2150 3450 2150
+	3050 1850 3050 2150
 NoConn ~ 3250 1850
 NoConn ~ 3350 1850
+Wire Wire Line
+	2200 2050 3150 2050
+Connection ~ 3050 2150
+Wire Wire Line
+	3050 2150 3450 2150
+Connection ~ 3150 2050
+Wire Wire Line
+	3150 2050 3450 2050
 $EndSCHEMATC
