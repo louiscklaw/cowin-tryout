@@ -45,7 +45,7 @@ F 1 "O_12M,3225" H 3600 2834 50  0000 C CNN
 F 2 "footprint-lib:OSC_3225" H 3600 2700 50  0001 C CNN
 F 3 "~" H 3600 2700 50  0001 C CNN
 	1    3600 2700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 2700 3850 2700
