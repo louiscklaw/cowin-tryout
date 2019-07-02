@@ -1,12 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
-LIBS:CH340T-tryout-cache
-LIBS:MCP73831-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -304,8 +302,28 @@ U 5D200348
 F0 "MCP73831" 50
 F1 "MCP73831.sch" 50
 $EndSheet
+$Sheet
+S 8350 5000 750  650 
+U 5D19E051
+F0 "at24cxx" 50
+F1 "at24cxx.sch" 50
+F2 "SCL" I L 8350 5250 50 
+F3 "SDA" I L 8350 5350 50 
+$EndSheet
+Entry Wire Line
+	7650 5150 7750 5250
+Entry Wire Line
+	7650 5250 7750 5350
+Wire Wire Line
+	7750 5250 8350 5250
+Wire Wire Line
+	7750 5350 8350 5350
+Text Label 7950 5250 0    50   ~ 0
+SCL
+Text Label 7950 5350 0    50   ~ 0
+SDA
 Wire Bus Line
 	5450 900  5450 2850
 Wire Bus Line
-	7650 900  7650 4700
+	7650 900  7650 5350
 $EndSCHEMATC

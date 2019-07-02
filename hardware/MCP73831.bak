@@ -1,12 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:cowin-tryout-cache
-LIBS:CH340T-tryout-cache
-LIBS:MCP73831-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 13 13
+Sheet 13 14
 Title ""
 Date ""
 Rev ""
@@ -625,10 +623,10 @@ F 3 "" H 6150 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L my_power:Vbat #PWR?
+L my_power:Vbat #PWR0185
 U 1 1 5D218F01
 P 5100 1450
-F 0 "#PWR?" H 5100 1300 50  0001 C CNN
+F 0 "#PWR0185" H 5100 1300 50  0001 C CNN
 F 1 "Vbat" H 5150 1600 50  0000 C CNN
 F 2 "" H 5100 1450 50  0001 C CNN
 F 3 "" H 5100 1450 50  0001 C CNN
@@ -686,10 +684,10 @@ Wire Wire Line
 Wire Wire Line
 	4300 2450 4300 2550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0186
 U 1 1 5D22DD1F
 P 4300 2550
-F 0 "#PWR?" H 4300 2300 50  0001 C CNN
+F 0 "#PWR0186" H 4300 2300 50  0001 C CNN
 F 1 "GND" H 4400 2550 50  0000 L CNN
 F 2 "" H 4300 2550 50  0001 C CNN
 F 3 "" H 4300 2550 50  0001 C CNN
@@ -697,10 +695,10 @@ F 3 "" H 4300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L taobao-c:C106,0603 C?
+L taobao-c:C106,0603 C21
 U 1 1 5D22DD29
 P 4300 2350
-F 0 "C?" H 4400 2400 50  0000 L CNN
+F 0 "C21" H 4400 2400 50  0000 L CNN
 F 1 "C106,0603" H 4400 2350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 2350 50  0001 C CNN
 F 3 "~" H 4300 2350 50  0001 C CNN
