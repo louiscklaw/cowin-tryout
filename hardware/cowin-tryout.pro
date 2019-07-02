@@ -1,4 +1,4 @@
-update=Tuesday, July 02, 2019 PM07:29:29 HKT
+update=Tue Jul  2 23:37:03 2019
 version=1
 last_client=kicad
 [general]
@@ -29,6 +29,7 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
+TrackWidth2=0.25
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=0.6
@@ -241,7 +242,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=300mA
 Clearance=0.2
-TrackWidth=0.3
+TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -252,7 +253,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=GND
 Clearance=0.2
-TrackWidth=0.5
+TrackWidth=0.6
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3

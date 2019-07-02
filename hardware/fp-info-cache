@@ -1,4 +1,4 @@
-19621664079830564
+19642658789441284
 2EDGK
 2EDGR-2
 2EDGR-2
@@ -42062,6 +42062,83 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
+danger_w_conn_mpt
+mpt_0,5%2f2-2,54
+2-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+2
+2
+danger_w_conn_mpt
+mpt_0,5%2f3-2,54
+3-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+3
+3
+danger_w_conn_mpt
+mpt_0,5%2f4-2,54
+4-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+4
+4
+danger_w_conn_mpt
+mpt_0,5%2f5-2,54
+5-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+5
+5
+danger_w_conn_mpt
+mpt_0,5%2f6-2,54
+6-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+6
+6
+danger_w_conn_mpt
+mpt_0,5%2f7-2,54
+7-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+7
+7
+danger_w_conn_mpt
+mpt_0,5%2f8-2,54
+8-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+8
+8
+danger_w_conn_mpt
+mpt_0,5%2f9-2,54
+9-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+9
+9
+danger_w_conn_mpt
+mpt_0,5%2f10-2,54
+10-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+10
+10
+danger_w_conn_mpt
+mpt_0,5%2f11-2,54
+11-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+11
+11
+danger_w_conn_mpt
+mpt_0,5%2f12-2,54
+12-way 2.54mm pitch terminal block, Phoenix MPT series
+
+0
+12
+12
 DG_KF128
 DG_KF128-2
 DG_KF128-2
@@ -44209,7 +44286,7 @@ BOARD_REVISION
 
 
 0
-1
+0
 0
 footprint-lib
 bq25606_VQFN24
@@ -44314,7 +44391,7 @@ DESIGNED_IN_HONG_KONG
 
 
 0
-1
+0
 0
 footprint-lib
 DFN-6-1EP_3x3mm_Pitch0.95mm_copy
@@ -44440,7 +44517,7 @@ GITHUB_ADDRESS
 
 
 0
-1
+0
 0
 footprint-lib
 GPS24P-SMD-1.1-16X12.2MM
@@ -63832,27 +63909,6 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
-Panelization.pretty
-mouse-bite-1mm-slot
-
-
-0
-0
-0
-Panelization.pretty
-mouse-bite-2.54mm-slot
-
-
-0
-0
-0
-Panelization.pretty
-mouse-bite-2mm-slot
-
-
-0
-0
-0
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf

@@ -2483,7 +2483,6 @@ Wire Wire Line
 	2500 2500 2650 2500
 Wire Wire Line
 	2650 2500 2650 2750
-NoConn ~ 2500 2400
 NoConn ~ 5500 2600
 NoConn ~ 5500 2700
 Text HLabel 6300 1600 2    50   Input ~ 0
@@ -2619,4 +2618,65 @@ Wire Wire Line
 	2650 1800 2650 2100
 Wire Wire Line
 	2650 2100 2500 2100
+$Comp
+L Connector:Conn_01x05_Female J10
+U 1 1 5D1B9086
+P 2100 3950
+F 0 "J10" H 1950 4350 50  0000 C CNN
+F 1 "USB_DBG" H 1950 4250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2100 3950 50  0001 C CNN
+F 3 "~" H 2100 3950 50  0001 C CNN
+	1    2100 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0195
+U 1 1 5D1BAF94
+P 2700 3550
+F 0 "#PWR0195" H 2700 3400 50  0001 C CNN
+F 1 "VBUS" H 2715 3723 50  0000 C CNN
+F 2 "" H 2700 3550 50  0001 C CNN
+F 3 "" H 2700 3550 50  0001 C CNN
+	1    2700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3550 2700 3750
+Wire Wire Line
+	2700 3750 2300 3750
+Text Label 2900 2200 2    50   ~ 0
+USB_N
+Text Label 2900 2300 2    50   ~ 0
+USB_P
+Text Label 2700 3850 2    50   ~ 0
+USB_N
+Text Label 2700 3950 2    50   ~ 0
+USB_P
+Wire Wire Line
+	2300 3850 2700 3850
+Wire Wire Line
+	2300 3950 2700 3950
+Text Label 2900 2400 2    50   ~ 0
+ID
+Wire Wire Line
+	2900 2400 2500 2400
+Text Label 2700 4050 2    50   ~ 0
+ID
+Wire Wire Line
+	2700 4050 2300 4050
+$Comp
+L power:GND #PWR0196
+U 1 1 5D1C2496
+P 2550 4250
+F 0 "#PWR0196" H 2550 4000 50  0001 C CNN
+F 1 "GND" H 2600 4050 50  0000 C CNN
+F 2 "" H 2550 4250 50  0001 C CNN
+F 3 "" H 2550 4250 50  0001 C CNN
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4250 2550 4150
+Wire Wire Line
+	2550 4150 2300 4150
 $EndSCHEMATC
