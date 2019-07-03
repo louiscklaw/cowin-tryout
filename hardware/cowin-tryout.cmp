@@ -1,4 +1,60 @@
-Cmp-Mod V01 Created by PcbNew   date = Tuesday, July 02, 2019 PM07:58:51 HKT
+Cmp-Mod V01 Created by PcbNew   date = Wednesday, July 03, 2019 PM12:22:17 HKT
+
+BeginCmp
+TimeStamp = 5D1BCAA2
+Path = /5D1FD10E
+Reference = U15;
+ValeurCmp = BOARD_REVISION;
+IdModule  = footprint-lib:BOARD_REVISION;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1BCA64
+Path = /5D1FB661
+Reference = U12;
+ValeurCmp = DESIGNED_IN_HONG_KONG;
+IdModule  = footprint-lib:DESIGNED_IN_HONG_KONG;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1D202B
+Path = /5D1FB900
+Reference = U13;
+ValeurCmp = GITHUB_ADDRESS;
+IdModule  = footprint-lib:GITHUB_ADDRESS;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1CFFBE
+Path = /5D19ABF9/5CD4D9E6
+Reference = U6;
+ValeurCmp = ESP12;
+IdModule  = footprint-lib:ESP-12E;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1545EC
+Path = /5D192838/5D18F018
+Reference = U10;
+ValeurCmp = SSD1306-OLED-I2C;
+IdModule  = footprint-lib:CONN_I2C_SSD1306;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1545D0
+Path = /5D17F36B/5D18E076
+Reference = U9;
+ValeurCmp = SSD1306-OLED-I2C;
+IdModule  = footprint-lib:CONN_I2C_SSD1306;
+EndCmp
+
+BeginCmp
+TimeStamp = 5D1C1E4A
+Path = /5D19ABF9/5CD5414F/5D1B9086
+Reference = J10;
+ValeurCmp = USB_DBG;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical;
+EndCmp
 
 BeginCmp
 TimeStamp = 5D1701A0
@@ -46,30 +102,6 @@ Path = /5D1B62BF/5D1B64B4
 Reference = J9;
 ValeurCmp = DHT22_HEADER;
 IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;
-EndCmp
-
-BeginCmp
-TimeStamp = 5D1BCAA2
-Path = /5D1FD10E
-Reference = U15;
-ValeurCmp = BOARD_REVISION;
-IdModule  = footprint-lib:BOARD_REVISION;
-EndCmp
-
-BeginCmp
-TimeStamp = 5D1BCA6B
-Path = /5D1FB900
-Reference = U13;
-ValeurCmp = GITHUB_ADDRESS;
-IdModule  = footprint-lib:GITHUB_ADDRESS;
-EndCmp
-
-BeginCmp
-TimeStamp = 5D1BCA64
-Path = /5D1FB661
-Reference = U12;
-ValeurCmp = DESIGNED_IN_HONG_KONG;
-IdModule  = footprint-lib:DESIGNED_IN_HONG_KONG;
 EndCmp
 
 BeginCmp
@@ -225,14 +257,6 @@ IdModule  = footprint-lib:MountingHole_2.7mm_M2.5,rpi_like;
 EndCmp
 
 BeginCmp
-TimeStamp = 5D1CFFBE
-Path = /5D19ABF9/5CD4D9E6
-Reference = U6;
-ValeurCmp = ESP12;
-IdModule  = footprint-lib:ESP-12E;
-EndCmp
-
-BeginCmp
 TimeStamp = 5D1671F6
 Path = /5D17F36B/5D1D9E2D
 Reference = RN5;
@@ -305,22 +329,6 @@ IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 5D1545EC
-Path = /5D192838/5D18F018
-Reference = U10;
-ValeurCmp = SSD1306-OLED-I2C;
-IdModule  = footprint-lib:CONN_I2C_SSD1306;
-EndCmp
-
-BeginCmp
-TimeStamp = 5D1545D0
-Path = /5D17F36B/5D18E076
-Reference = U9;
-ValeurCmp = SSD1306-OLED-I2C;
-IdModule  = footprint-lib:CONN_I2C_SSD1306;
-EndCmp
-
-BeginCmp
 TimeStamp = 5D162815
 Path = /5D19ABF9/5CD5414F/5D05E9C1
 Reference = Y1;
@@ -361,7 +369,7 @@ IdModule  = footprint-lib:SHT3x-DIS;
 EndCmp
 
 BeginCmp
-TimeStamp = 5D1D2C7E
+TimeStamp = 5D1C36F3
 Path = /5D1443CD/5D16A974
 Reference = U3;
 ValeurCmp = PMS5003S_BODY;
