@@ -1,4 +1,4 @@
-19621664079830564
+19624792184302564
 2EDGK
 2EDGR-2
 2EDGR-2
@@ -44331,6 +44331,13 @@ DS1307
 8
 8
 footprint-lib
+ESP-07
+Wi-Fi Module, http://wiki.ai-thinker.com/_media/esp8266/docs/a007ps01a2_esp-07_product_specification_v1.2.pdf
+Wi-Fi Module
+0
+16
+16
+footprint-lib
 ESP-12
 
 
@@ -46157,6 +46164,13 @@ VAR_1206
 0
 2
 2
+footprint-lib
+VEML6070
+
+
+0
+6
+6
 footprint-lib
 W25Q32JVSSIQ
 
